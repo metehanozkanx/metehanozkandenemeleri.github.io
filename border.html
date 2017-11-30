@@ -1,0 +1,230 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: lightblue;
+}
+textarea#bicim {
+resize:none;
+}
+p.width5 {
+border-style: solid;
+border-width: 5px;
+}
+p.widthm {
+border-style: solid;
+border-width: medium;
+}
+p.width1 {
+border-style: solid;
+border-width: 1px;
+}
+p.none {
+border-style: none;
+}
+p.dotted {
+border-style: dotted;
+}
+p.dashed {
+border-style: dashed;
+}
+p.solid {
+border-style: solid;
+}
+p.double {
+border-style: double;
+}
+p.bordercolor {
+border-style: solid;
+border-color: pink purple blue red;
+}
+p.borderbottom { 
+border-style: solid;
+border-bottom: dashed black;
+}
+p.bordertop {
+border-style: solid;
+border-top: dashed black;
+}
+p.borderleft {
+border-style: solid;
+border-left: dashed black;
+}
+p.borderright {
+border-style: solid;
+border-right: dashed black;
+}
+p.borderbottomwidth {
+border-style: solid;
+border-bottom-width: 15px;
+}
+p.boxshadow {	
+width: 300px;
+height: 100px;
+background-color: white;
+box-shadow: 10px 10px 5px red; 
+}
+table.ex2 {
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+	}
+#borderimage {
+border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(https://i.hizliresim.com/bLY86G.png) 30 round; 
+    -o-border-image: url(https://i.hizliresim.com/bLY86G.png) 30 round;
+    border-image: url(https://i.hizliresim.com/bLY86G.png) 30 round;
+}
+p.borderradius {
+border: 2px solid darkgray;
+padding: 10px 40px; 
+background: gray;
+width: 300px;
+border-radius: 25px;
+}
+</style>
+</head>
+<body>
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+<h1>Border Width - Kenar Genişliği</h1>
+<p class="width5">5px'lik kenar genişliği</p>
+<textarea id="bicim" rows="3" cols="40">
+border-style: solid;
+border-width: 5px;
+</textarea>
+<p class="widthm">Medium kenar genişliği</p>
+<textarea id="bicim" rows="3" cols="40">
+border-style: solid;
+border-width: medium;
+</textarea>
+<p class="width1">1px'lik kenar genişliği</p>
+<textarea id="bicim" rows="3" cols="40">
+border-style: solid;
+border-width: 1px;
+</textarea>
+
+<hr>
+
+<h1>Border Style - Kenar Stili</h1>
+<p class="none">Kenar yok</p>
+<textarea id="bicim" rows="2" cols="40">
+border-style: none;
+</textarea>
+<p class="dotted">Noktalı kenar</p>
+<textarea id="bicim" rows="2" cols="40">
+border-style: dotted;
+</textarea>
+<p class="dashed">Kesik kenar</p>
+<textarea id="bicim" rows="2" cols="40">
+border-style: dashed;
+</textarea>
+<p class="solid">Katı kenar</p>
+<textarea id="bicim" rows="2" cols="40">
+border-style: solid;
+</textarea>
+<p class="double">Çift kenar</p>
+<textarea id="bicim" rows="2" cols="40">
+border-style: double;
+</textarea>
+
+<hr>
+<h1>Border Color - Kenar Rengi</h1>
+<p class="bordercolor">Kenarlar farklı renkte</p>
+<textarea id="bicim" rows="3" cols="40">
+border-style: solid;
+border-color: pink purple blue red;
+</textarea>
+
+<hr>
+
+<h1>Border Bottom - Alt Kenar</h1>
+<p class="borderbottom">Alt siyah kesik kenar</p>
+<textarea id="bicim" rows="4" cols="40">
+border-style: solid;
+border-bottom: dashed black;
+</textarea>
+
+<h1>Border Top - Üst Kenar</h1>
+<p class="bordertop">Üst siyah kesik kenar</p>,
+<textarea id="bicim" rows="4" cols="40">
+border-style: solid;
+border-top: dashed black;
+</textarea>
+
+<h1>Border Left - Sol Kenar</h1>
+<p class="borderleft">Sol siyah kesik kenar</p>,
+<textarea id="bicim" rows="4" cols="40">
+border-style: solid;
+border-left: dashed black;
+</textarea>
+
+<h1>Border Right - Sağ Kenar</h1>
+<p class="borderright">Sağ siyah kesik kenar</p>,
+<textarea id="bicim" rows="4" cols="40">
+border-style: solid;
+border-right: dashed black;
+</textarea>
+
+<h1>Border Bottom Width - Alt Kenar Genişliği</h1>
+<p class="borderbottomwidth">Alt kenarın genişliği 15 px</p>
+<textarea id="bicim" rows="4" cols="40">
+boder-style: solid;
+border-botttom-width: 15px;
+</textarea>
+
+<hr>
+
+<h1>Box Shadow - Kutu Gölgesi</h1>
+<p class="boxshadow">Kutu gölgesi</p>
+<textarea id="bicim" rows="5" cols="40">
+width: 300px;
+height: 100px;
+background-color: white;
+box-shadow: 10px 10px 5px red; 
+</textarea>
+
+<hr>
+<h1> Table Border Collapse</h1>
+<table class="ex2" border="1">
+Tablo içinde ayrık kutucuklar oluştu collapse: separete; olduğu için ;
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+  </tr>
+  <tr>
+    <td>Glenn</td>
+    <td>Quagmire</td>
+  </tr>
+</table>
+<textarea id="bicim" rows="3" cols="40">
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+</textarea>
+
+<hr>
+<h1>Border İmage</h1>
+<p id="borderimage">Border İmage</p>
+<textarea id="bicim" rows="9" cols="60">
+border: 10px solid transparent;
+padding:15px;
+-webkit-border-image: url(https://i.hizliresim.com/bLY86G.png) 30 round;
+-o-border-image: url(https://i.hizliresim.com/bLY86G.png) 30 round;
+border-image: url (https://i.hizliresim.com/bLY86G.png) 30 round;
+</textarea>
+
+<hr>
+<h1>Border Radius - Kenar Yarıçapı </h1>
+<p class="borderradius">Kenarın yarıçapı</p>
+<textarea id="bicim" rows="6" cols="40">
+border: 2px solid darkgray;
+padding: 10px 40px; 
+background: gray;
+width: 300px;
+border-radius: 25px;
+</textarea>
+
+<hr>
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+</body>
+</html>

@@ -1,0 +1,181 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color:lightblue;
+}
+
+textarea{
+resize:none;
+}
+
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #8AC007;
+}
+
+div.absolutebottom{
+    position: absolute;
+    bottom: 70px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #8AC007;
+} 
+
+div.absoluteright{
+    position: absolute;
+    right: 20px;
+    width: 200px;
+    height: 120px;
+    border: 3px solid #8AC007;
+}
+
+div.absolutetop{
+    position: absolute;
+    top: 80px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #8AC007;
+}
+
+div.absoluteleft{
+    position: absolute;
+    left: 80px;
+    width: 200px;
+    height: 120px;
+    border: 3px solid #8AC007;
+}
+
+.img1{
+    position: absolute;
+    clip: rect(0px,60px,200px,0px);
+}
+.img2{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+</style>
+</head>
+<body>
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+<h1 style="background-color:white;">Bottom</h1>
+<div class="relative">Bu div öğesinin konumu: göreceli;
+<div class="absolutebottom">Bu div öğesinin konumu: mutlaktır. Yer alan yerleştirilmiş öğenin alt kenarının 70 piksel üzerine yerleştirilir.</div>
+</div>
+</div>
+<textarea rows="15" cols="32">
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #8AC007;
+}
+
+div.absolutebottom{
+    position: absolute;
+    bottom: 70px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #8AC007;
+}
+</textarea>
+
+<h1 style="background-color:white;">Right</h1>
+<div class="relative">Bu div öğesinin konumu: göreceli;
+<div class="absoluteright">Bu div öğesinin konumu: mutlaktır. İçeren konumlandırılmış elemanın sağ kenarının soluna 20 piksel yerleştirilir
+</div>
+</div>
+<textarea rows="14" cols="32">
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #8AC007;
+}
+div.absoluteright{
+    position: absolute;
+    right: 20px;
+    width: 200px;
+    height: 120px;
+    border: 3px solid #8AC007;
+}
+</textarea>
+
+<h1 style="background-color:white;">Top</h1>
+<div class="relative">Bu div öğesinin konumu: göreceli;
+<div class="absolutetop">Bu div öğesinin konumu: mutlaktır. Bu, yerleştirilen konumlandırılmış öğenin üst kenarının 80 piksinin altına yerleştirilir
+</div>
+</div>
+<textarea rows="14" cols="32">
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #8AC007;
+}
+div.absolutetop{
+    position: absolute;
+    top: 80px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #8AC007;
+}
+</textarea>
+
+<h1 style="background-color:white;">Left</h1>
+<div class="relative">Bu div öğesinin konumu: göreceli;
+<div class="absoluteleft">Bu div öğesinin konumu: mutlaktır. Yerleştirilen konumlandırılmış öğenin sol kenarının sağında 80 piksel yerleştirilir
+</div>
+</div>
+<textarea rows="14" cols="32">
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #8AC007;
+}
+div.absoluteleft{
+    position: absolute;
+    left: 80px;
+    width: 200px;
+    height: 120px;
+    border: 3px solid #8AC007;
+}
+</textarea>
+
+<h1 style="background-color:white;">Clip</h1>
+<img src="https://i.hizliresim.com/LOpl6z.png" width="100" height="140">
+<textarea rows="5" cols="36">
+.img1{
+    position: absolute;
+    clip: rect(0px,60px,200px,0px);
+}
+</textarea>
+
+<br><br><br><br><br><br><br>
+
+<h1 style="background-color:white;">Z-index</h1>
+<h1>This is a heading</h1>
+<img src="https://i.hizliresim.com/LOpl6z.png" width="100" height="140">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+<textarea rows="7" cols="24">
+.img2{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+</textarea>
+
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+</body>
+</html>

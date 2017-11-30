@@ -1,0 +1,372 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color:lightblue;
+}
+textarea#bicim {
+resize:none;
+}
+.img {
+float: right;
+margin: 0 600 10px 10px;
+}
+.img1  {
+float: left;
+margin: 0 0 10px 10px;
+}
+p.maxheight{
+max-height: 50px;
+background-color:yellow;
+owerflow:auto;
+}
+p.margin{
+border: 1px solid black;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 100px;
+margin-left: 100px;
+}
+p.padding{
+border: 1px solid black;
+padding-top: 50px;
+padding-right: 50px;
+padding-bottom: 50px;
+padding-left: 50px;
+}
+p.display{
+display:inline;
+}
+p.display1{
+display:block;
+}
+p.displaynone{
+display:none;
+}
+.marquee {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: purple;
+ border: 1px solid orange;
+}
+.marquee p {
+font-size:50px;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 8s linear infinite;
+ -webkit-animation: scroll-left 8s linear infinite;
+ animation: scroll-left 8s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+.bounce {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: purple;
+ border: 1px solid orange;
+}
+.bounce p {
+font-size:50px;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(50%);
+ -webkit-transform:translateX(50%);	
+ transform:translateX(50%);
+ /* Apply animation to this element */	
+ -moz-animation: bouncing-text 5s linear infinite alternate;
+ -webkit-animation: bouncing-text 5s linear infinite alternate;
+ animation: bouncing-text 5s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes bouncing-text {
+ 0%   { -moz-transform: translateX(50%); }
+ 100% { -moz-transform: translateX(-50%); }
+}
+@-webkit-keyframes bouncing-text {
+ 0%   { -webkit-transform: translateX(50%); }
+ 100% { -webkit-transform: translateX(-50%); }
+}
+@keyframes bouncing-text {
+ 0%   { 
+ -moz-transform: translateX(50%); /* Browser bug fix */
+ -webkit-transform: translateX(50%); /* Browser bug fix */
+ transform: translateX(50%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-50%); /* Browser bug fix */
+ -webkit-transform: translateX(-50%); /* Browser bug fix */
+ transform: translateX(-50%); 
+ }
+}
+
+div.scroll {
+    background-color:blue;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+
+div.hidden {
+    background-color:green;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+	}
+</style>
+</head>
+<body>
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+<h1><center><strong>Float Right-Left</strong></center></h1>
+<p>Bu örnekte, resim paragraftaki sağa kayacak ve paragraftaki metin resmi çevreleyecektir.</p>
+<div><img class="img" src="https://i.hizliresim.com/bLY86G.png" alt="ortak" width="170" height="170">Resim sağda gözüküyor. Resim sağda gözüküyor.</div>
+<textarea id="bicim" rows="3" cols="25">
+float: right;
+margin: 0 600 10px 10px;
+</textarea>
+<br><br><br><br><br><br><br><br>
+
+<div><img class="img1" src="https://i.hizliresim.com/bLY86G.png" alt="ortak" width="170" height="170">Resim solda gözüküyor. Resim solda gözüküyor.</div>
+<textarea id="bicim" rows="3" cols="23">
+float: left;
+margin: 0 0 10px 10px;
+</textarea>
+<br><br><br><br><br><br><br><br>
+
+<hr>
+<h1><center>Height Width</center></h1>
+<p><strong> Height: Herhangi bir şeyin yükseliği.. <br> Width: Herhangi bir şeyin genişliği.. </strong></p>
+<h1><center>Max-height</center></h1>
+<p class="maxheight">Bu paragrafın maksimum yüksekliği 50 piksele ayarlıdır. Bu paragrafın maksimum yüksekliği 50 piksele ayarlıdır. Bu paragrafın maksimum yüksekliği 50 piksele ayarlıdır. Bu paragrafın maksimum yüksekliği 50 piksele ayarlıdır. Bu paragrafın maksimum yüksekliği 50 piksele ayarlıdır. Bu paragrafın maksimum yüksekliği 50 piksele ayarlıdır. Bu paragrafın maksimum yüksekliği 50 piksele ayarlıdır. Bu paragrafın maksimum yüksekliği 50 piksele ayarlıdır. Bu paragrafın maksimum yüksekliği 50 piksele ayarlıdır. Bu paragrafın maksimum yüksekliği 50 piksele ayarlıdır. </p>
+<br>
+<textarea id="bicim" rows="4" cols="25">
+max-height: 50px;
+background-color:yellow;
+owerflow:auto;
+</textarea>
+
+<hr>
+
+<h1><center>Margin</center></h1>
+<p class="margin">Bu öğenin üst kenar boşluğu 100px, sağ kenar boşluğu 100px, alt kenar boşluğu 100px ve sol kenar boşluğu 100px'tir.</p>
+<textarea id="bicim" rows="6" cols="25">
+border: 1px solid black;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 100px;
+margin-left: 100px;
+</textarea>
+
+<hr>
+
+<h1><center>Padding</center></h1>
+<p class="padding">Bu öğenin üst dolgusu 50 piksel, sağa dolgu 50 piksel, alt dolgu 50 piksel ve sol dolgu 50 pikselliktir.</p>
+<textarea id="bicim" rows="6" cols="25">
+border: 1px solid black;
+padding-top: 50px;
+padding-right: 50px;
+padding-bottom: 50px;
+padding-left: 50px;
+</textarea>
+
+<hr>
+
+<h1><center>Display</center></h1>
+<p class="display">Display</p>
+<p class="display">Display</p>
+<p class="display">Display</p>
+<p class="display">Display</p>
+<br>
+<textarea id="bicim" rows="3" cols="24">
+display:inline;
+-Satır içi göster-
+</textarea>
+
+<p class="display1">Display</p>
+<p class="display1">Display</p>
+<p class="display1">Display</p>
+<p class="display1">Display</p>
+<br>
+<textarea id="bicim" rows="3" cols="24">
+display:block;
+-Alt alta sırala-
+</textarea>
+
+<p>Normalde burada örneğin "Display" gibi yazı görmeniz lazımdı display:none; yazdığımız için hiçbirşey gözükmemekte..</p>
+<p class="displaynone">Display</p>
+<p class="displaynone">Display</p>
+<p class="displaynone">Display</p>
+<p class="displaynone">Display</p>
+<br>
+<textarea id="bicim" rows="3" cols="27">
+display:none;
+-Ekranda hiçbirşey gösterme-
+</textarea>
+
+<hr>
+<h1><center>Marquee</center></h1>
+<div class="marquee">
+<p>Kayan metin </p>
+</div>
+<p>Style'in içindeki kodlar;</p>
+<textarea id="bicim" rows="52" cols="52">
+.marquee {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: purple;
+ border: 1px solid orange;
+}
+.marquee p {
+font-size:50px;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 8s linear infinite;
+ -webkit-animation: scroll-left 8s linear infinite;
+ animation: scroll-left 8s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</textarea>
+
+<div class="bounce">
+<p>Hareketli metin</p>
+</div>
+<p>Style'in içindeki kodlar;</p>
+<textarea id="bicim" rows="47" cols="64" >
+.bounce {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: purple;
+ border: 1px solid orange;
+}
+.bounce p {
+font-size:50px;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(50%);
+ -webkit-transform:translateX(50%);	
+ transform:translateX(50%);
+ /* Apply animation to this element */	
+ -moz-animation: bouncing-text 5s linear infinite alternate;
+ -webkit-animation: bouncing-text 5s linear infinite alternate;
+ animation: bouncing-text 5s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes bouncing-text {
+ 0%   { -moz-transform: translateX(50%); }
+ 100% { -moz-transform: translateX(-50%); }
+}
+@-webkit-keyframes bouncing-text {
+ 0%   { -webkit-transform: translateX(50%); }
+ 100% { -webkit-transform: translateX(-50%); }
+}
+@keyframes bouncing-text {
+ 0%   { 
+ -moz-transform: translateX(50%); /* Browser bug fix */
+ -webkit-transform: translateX(50%); /* Browser bug fix */
+ transform: translateX(50%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-50%); /* Browser bug fix */
+ -webkit-transform: translateX(-50%); /* Browser bug fix */
+ transform: translateX(-50%); 
+ }
+}
+</textarea>
+<h1><center>OverFlow</center></h1>
+<p>Overflow Scroll</p>
+<div class="scroll">Düzenin daha iyi kontrol edilmesini istiyorsanız, taşma özelliğini kullanabilirsiniz. Varsayılan değer görünür durumda.</div>
+<textarea id="bicim" rows="5" cols="27">
+background-color:blue;
+width: 100px;
+height: 100px;
+overflow: scroll;
+</textarea>
+<p>Overflow Hidden</p>
+<div class="hidden">Düzenin daha iyi kontrol edilmesini istiyorsanız, taşma özelliğini kullanabilirsiniz. Varsayılan değer görünür durumda.</div>
+<textarea id="bicim" rows="5" cols="25">
+background-color: green;
+width: 100px;
+height: 100px;
+overflow: hidden;
+</textarea>
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+</body>
+</html>

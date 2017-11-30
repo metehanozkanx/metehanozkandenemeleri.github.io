@@ -1,0 +1,306 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color:lightblue;
+}
+textarea#bicim{
+resize:none;
+}
+div.animation{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+-webkit-animation:mymove 5s infinite; /* Safari 4.0 - 8.0 */
+animation:mymove 2s infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+from {left: 0px;}
+to {left: 200px;}
+}
+@keyframes mymove {
+from {left: 0px;}
+to {left: 200px;}
+}
+
+div.animationduration{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+-webkit-animation: mymove1 infinite; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+animation: mymove1 infinite;
+animation-duration: 2s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove1{
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes mymove1{
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+div.animationdelay{
+width: 100px;
+height: 100px;
+background: red;
+position: relative;
+-webkit-animation: mymove2 5s infinite; /* Safari 4.0 - 8.0 */
+-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+animation: mymove2 5s infinite;
+animation-delay: 2s;
+}
+@-webkit-keyframes mymove2 {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove2 {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+div.animationiterationcount{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove3 3s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    animation: mymove3 3s;
+    animation-iteration-count: 3;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove3 {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes mymove3 {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+div.animationdirection{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+div.animationplaystate{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove4 5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
+    animation: mymove4 5s;
+    animation-play-state: running;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove4 {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove4 {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+</style>
+</head>
+<body>
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+<p style="background-color:white;"><strong>Burada animasyonların çakışmaması için style kodun içinde  animasyonu ve webkit'li olan kodları birbirine aynı bir şekilde numaralandırıyoruz.<br> Her animasyon için farklı bir şekilde numaralandırırsak çakışma olmayıp kodumuz düzgün çalışıyor.</strong></p>
+
+<h1 style="background-color:white;">Animations</h1>
+<div class="animation"></div>
+<textarea id="bicim" rows="18" cols="61">
+div.animation{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+-webkit-animation:mymove 5s infinite; /* Safari 4.0 - 8.0 */
+animation:mymove 2s infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+from {left: 0px;}
+to {left: 200px;}
+}
+@keyframes mymove {
+from {left: 0px;}
+to {left: 200px;}
+}
+</textarea>
+<h1 style="background-color:white;">Animation Duration</h1>
+<div class="animationduration"></div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="bicim" rows="21" cols="60">
+div.animationduration{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+-webkit-animation: mymove1 infinite; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+animation: mymove1 infinite;
+animation-duration: 2s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove1{
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes mymove1{
+    from {top: 0px;}
+    to {top: 200px;}
+}	
+</textarea>
+
+<h1 style="background-color:white;">Animation Delay</h1>
+<div class="animationdelay"></div>
+<textarea id="bicim" rows="20" cols="64">
+div.animationdelay{
+width:100px;
+hegiht:100px;
+background:red;
+position:relative;
+-webkit-animation: mymove2 5s infinite; /* Safari 4.0 - 8.0 */
+-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+animation: mymove2 5s infinite;
+animation-delay: 2s;
+}
+@-webkit-keyframes mymove2 {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove2 {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+</textarea>
+
+<h1 style="background-color:white;">Animation İteration Count</h1>
+<div class="animationiterationcount"></div>
+<textarea id="bicim" rows="22" cols="65">
+div.animationiterationcount{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove3 3s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    animation: mymove3 3s;
+    animation-iteration-count: 3;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove3 {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes mymove3 {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+</textarea>
+
+<h1 style="background-color:white;">Animation Direction</h1>
+<div class="animationdirection"></div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="bicim" rows="28" cols="68">
+div.animationdirection{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+</textarea>
+
+<h1 style="background-color:white;">Animation Play State</h1>
+<div class="animationplaystate"></div>
+<textarea id="bicim" rows="22" cols="66">
+div.animationplaystate{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove4 5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
+    animation: mymove4 5s;
+    animation-play-state: running;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove4 {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove4 {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+</textarea>
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+</body>
+</html>

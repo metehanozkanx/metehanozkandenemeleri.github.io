@@ -1,0 +1,134 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color:lightblue;
+}
+textarea#bicim{
+resize:none;
+}
+.borderspacing{
+border-collapse:separate;
+border-spacing:10px;
+}
+.caption{
+caption-side:bottom;
+}
+.tableempty{
+border-collapse:seperate;
+empty-cells:hide;
+}
+
+.table{
+border-collapse: separate;
+width: 100%;
+border: 1px solid black;
+}
+.td{
+border: 1px solid black;
+}
+.ex1{
+table-layout:auto;
+}
+</style>
+</head>
+<body>
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+<h1 style="background-color:white"><center>Border Spacing</center></h1>
+<table class="borderspacing" border="1">
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+<textarea id="bicim" rows="4" cols="26">
+border-collapse:separate;
+border-spacing:10px;
+</textarea>
+<h1 style="background-color:white"><center>Caption Side</center></h1>
+<table class="caption" border="1">
+<tr>
+  <th>Şirket</th>
+  <th>İletişime Geçilen Kişi</th>
+  <th>Ülke</th>
+</tr>
+<tr>
+  <td>Özkanlar Holding</td>
+  <td>Metehan ÖZKAN</td>
+  <td>Türkiye</td>
+</tr>
+<tr>
+  <td>Doğan Holding</td>
+  <td>Aydın Doğan</td>
+  <td>Türkiye</td>
+</tr>
+<tr>
+  <td>Koç Holding</td>
+  <td>Vehbi Koç</td>
+  <td>Türkiye</td>
+</tr>
+<tr>
+  <td>Ernst Handel</td>
+  <td>Roland Mendel</td>
+  <td>Austria</td>
+</tr>
+<tr>
+  <td>Island Trading</td>
+  <td>Helen Bennett</td>
+  <td>UK</td>
+</tr>
+</table>
+<textarea id="bicim" rows="2" cols="21">
+caption-side:bottom;
+</textarea>
+
+<h1 style="background-color:white"><center>Empty Cells</center></h1>
+<table class="tableempty" border="1">
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td></td>
+  </tr>
+</table>
+<textarea id="bicim" rows="4" cols="24">
+border-collapse:seperate;
+empty-cells:hide;
+</textarea>
+
+<h1 style="background-color:white"><center>Table Layout</center></h1>
+<table class="table">
+<p>Table Layout Auto</p>
+<table class="ex1">
+  <tr>
+    <td class="td" width="5%">1000000000000000000000000000</td>
+    <td class="td" width="95%">10000000</td>
+  </tr>
+</table>
+</table>
+<textarea id="bicim" rows="12" cols="28">
+.table{
+border-collapse: separate;
+width: 100%;
+border: 1px solid black;
+}
+.tdm{
+border: 1px solid black;
+}
+.ex1{
+table-layout:auto;
+}
+</textarea>
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+</body>
+</html>

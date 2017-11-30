@@ -1,0 +1,84 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color:lightblue;
+}
+textarea{
+resize:none;
+}
+
+.rubyalign{
+ruby-align:start;
+}
+
+.rubyposition{
+    ruby-position:under;
+}
+.rubyoverhang{
+  ruby-align: right;
+  ruby-position: above;
+  ruby-overhang: whitespace
+}
+</style>
+</head>
+<body>
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+<h1 style="background-color:white;">Ruby Align</h1>
+<ruby class="rubyalign">
+  <rb>This is a long text to check</rb>
+  <rp>（</rp><rt>Kısa Ruby</rt><rp>）</rp>	
+</ruby>
+<br>
+<textarea rows="10" cols="114">
+.rubyalign{
+ruby-align:start;
+}
+BURAYA KADARINI STYLE ETİKETLERİ ARASINA YERLEŞTİRİYORUZ BUNDAN SONRASINI BODY ETİKETLERİ ARASINA YERLEŞTİRECEĞİZ
+<ruby class="rubyalign">
+  <rb>This is a long text to check</rb>
+  <rp>（</rp><rt>Kısa Ruby</rt><rp>）</rp>
+</ruby>
+</textarea>
+
+<h1 style="background-color:white;">Ruby Position</h1>
+<ruby class="rubyposition">
+  <rb>Metehan Özkan</rb>
+  <rp>（</rp><rt>İsim Soyisim</rt><rp>）</rp>
+</ruby>
+<br>
+<textarea rows="10" cols="114">
+.rubyposition{
+    ruby-position:under;
+}
+BURAYA KADARINI STYLE ETİKETLERİ ARASINA YERLEŞTİRİYORUZ BUNDAN SONRASINI BODY ETİKETLERİ ARASINA YERLEŞTİRECEĞİZ
+<ruby class="rubyposition">
+  <rb>Metehan Özkan</rb>
+  <rp>（</rp><rt>İsim Soyisim</rt><rp>）</rp>
+</ruby>
+</textarea>
+
+<h1 style="background-color:white;">Ruby Overhang</h1>
+<ruby class="rubyoverhang">
+  Ruby temel içeriği<rt>Ruby metni</rt>
+</ruby>
+<br>
+<textarea rows="11" cols="114">
+.rubyoverhang{
+  ruby-align: right;
+  ruby-position: above;
+  ruby-overhang: whitespace
+}
+BURAYA KADARINI STYLE ETİKETLERİ ARASINA YERLEŞTİRİYORUZ BUNDAN SONRASINI BODY ETİKETLERİ ARASINA YERLEŞTİRECEĞİZ
+<ruby class="rubyoverhang">
+  Ruby temel içeriği<rt>Ruby metni</rt>
+</ruby>
+</textarea>
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+</body>
+</html>

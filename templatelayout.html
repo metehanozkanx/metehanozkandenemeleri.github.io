@@ -1,0 +1,163 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color:lightblue;
+}
+
+textarea#bicim{
+resize:none;
+}
+
+.boxalignend{
+border: 1px solid blue;
+width: 200px;
+height: 200px;
+display: -webkit-box;
+display:    -moz-box;
+display:         box;
+-webkit-box-pack: center;
+-moz-box-pack: center;
+box-pack: center;
+-webkit-box-align: end;
+-moz-box-align: end;
+box-align: end;
+}
+
+.normal{       
+width:300px;       
+height:200px;       
+border:2px inset red;      
+display:-moz-inline-box;      
+display:-webkit-inline-box;       
+-moz-box-direction:normal;       
+-webkit-box-direction:normal;
+}        
+
+.reverse{        
+width:300px;        
+height:200px;      
+border:2px inset #ed3778;        
+display:-moz-inline-box;
+display:-webkit-inline-box;
+-moz-box-direction:reverse;      
+-webkit-box-direction:reverse;
+}
+
+#main {
+width: 220px;
+height: 300px;
+border: 1px solid black;
+display: -webkit-flex; /* Safari */
+display: flex;
+}
+#main div {
+-webkit-flex: 1;  /* Safari 6.1+ */
+-ms-flex: 1;  /* IE 10 */    
+flex: 1;
+}
+.boxorient{
+border: 1px solid blue;
+-webkit-box-orient: horizontal;
+-moz-box-orient: horizontal;
+box-orient: horizontal;
+display: -webkit-box;
+display:    -moz-box;
+display:         box;
+}
+.boxsizing{
+width:300px;
+height:100px;
+border: 1px solid blue;
+box-sizing:border-box;
+}
+</style>
+</head>
+<body>
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+<h1 style="background-color:white"><center>Box Align End</center></h1>
+<p class="boxalignend">Box Align End..<br>Yazı kutunun sonunda başlar..</p>
+<textarea id="bicim" rows="13" cols="26">
+ border: 1px solid blue;
+width: 200px;
+height: 200px;
+display: -webkit-box;
+display:    -moz-box;
+display:         box;
+-webkit-box-pack: center;
+-moz-box-pack: center;
+box-pack: center;
+-webkit-box-align: end;
+-moz-box-align: end;
+box-align: end;
+</textarea>
+<br>
+<h1 style="background-color:white"><center>Box Direction</center></h1>
+<p class="normal">Box direction</p>
+<br>
+<textarea id="bicim" rows="8" cols="34">
+width:300px;       
+height:200px;       
+border:2px inset red;      
+display:-moz-inline-box;      
+display:-webkit-inline-box;       
+-moz-box-direction:normal;       
+-webkit-box-direction:normal;
+</textarea>
+<br>
+<p class="reverse">Reverse box direction</p>
+<br>
+<textarea id="bicim" rows="8" cols="34">
+width:300px;        
+height:200px;      
+border:2px inset #ed3778;        
+display:-moz-inline-box;
+display:-webkit-inline-box;
+-moz-box-direction:reverse;      
+-webkit-box-direction:reverse;
+</textarea>
+<br>
+<h1 style="background-color:white"><center>Box Flex</center></h1>
+<div id="main">
+<div style="background-color:coral;">KIRMIZI</div>
+<div style="background-color:lightblue;">MAVİ</div>  
+<div style="background-color:lightgreen;">YEŞİL</div>
+</div>
+<textarea id="bicim" rows="13" cols="36">
+#main {
+width: 220px;
+height: 300px;
+border: 1px solid black;
+display: -webkit-flex; /* Safari */
+display: flex;
+}
+#main div {
+-webkit-flex: 1;  /* Safari 6.1+ */
+-ms-flex: 1;  /* IE 10 */    
+flex: 1;
+}
+</textarea>
+<br>
+<h1 style="background-color:white"><center>Box Orient</center></h1>
+<p class="boxorient">BoxOrient BoxOrient BoxOrient</p>
+<textarea id="bicim" rows="8" cols="32">
+border: 1px solid blue;
+-webkit-box-orient: horizontal;
+-moz-box-orient: horizontal;
+box-orient: horizontal;
+display: -webkit-box;
+display:    -moz-box;
+display:         box;
+</textarea>
+<h1 style="background-color:white"><center>Box Sizing</center></h1>
+<p class="boxsizing">Box Sizing - Border Box</p>
+<textarea id="bicim" rows="5" cols="24">
+width: 300px;
+height: 100px;
+border: 1px solid blue;
+box-sizing: border-box;
+</textarea>
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+</body>
+</html>

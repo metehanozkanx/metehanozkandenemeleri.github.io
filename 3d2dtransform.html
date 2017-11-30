@@ -1,0 +1,301 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color:lightblue;
+}
+
+textarea{
+resize:none;
+}
+
+.div{
+position: relative;
+height: 60px;
+width: 60px;
+background-color: red;
+-webkit-transform: rotateY(180deg);  /* Chrome, Safari, Opera */
+transform: rotateY(180deg);
+}
+
+#div1 {
+-webkit-backface-visibility: hidden;  /* Chrome, Safari, Opera */
+backface-visibility: hidden;
+}
+
+#div2 {
+-webkit-backface-visibility: visible;  /* Chrome, Safari, Opera */
+backface-visibility: visible;
+}
+
+#div3{
+position:relative;
+height:150px;
+width:150px;
+margin:50px;
+padding:10px;
+border:1px solid black;
+-webkit-perspective:150px; /* Chrome, Safari, Opera */
+perspective:150px;
+}
+#div4{
+padding:50px;
+position:absolute;
+border:1px solid black;
+background-color:red;
+-webkit-transform:rotateX(45deg); /* Chrome, Safari, Opera */
+transform:rotateX(45deg);
+}
+
+#div5 {
+position: relative;
+height: 150px;
+width: 150px;
+margin: 50px;
+padding: 10px;
+border: 1px solid black;
+-webkit-perspective: 150px; /* Chrome, Safari, Opera */
+-webkit-perspective-origin: 10% 10%; /* Chrome, Safari, Opera */
+perspective: 150px;
+perspective-origin: 10% 10%;
+}
+
+#div6 {
+padding: 50px;
+position: absolute;
+border: 1px solid black;
+background-color: red;
+-webkit-transform: rotateX(45deg); /* Chrome, Safari, Opera */
+transform: rotateX(45deg);
+}
+
+.div2{
+width: 200px;
+height: 100px;
+background-color: yellow;
+/* Rotate div */
+-ms-transform: rotate(7deg); /* IE 9 */
+-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+transform: rotate(7deg);
+}
+
+#div7{
+position: relative;
+height: 200px;
+width: 200px;
+margin: 100px;
+padding: 10px;
+border: 1px solid black;
+}
+
+#div8{
+padding: 50px;
+position: absolute;
+border: 1px solid black;
+background-color: red;
+-ms-transform: rotate(45deg); /* IE 9 */
+-ms-transform-origin: 20% 40%; /* IE 9 */
+-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+-webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */
+transform: rotate(45deg);
+transform-origin: 20% 40%;
+}
+
+#div9{
+position: relative;
+height: 200px;
+width: 200px;
+margin: 100px;
+padding: 10px;
+border: 1px solid black;
+}
+
+#div10{
+padding: 50px;
+position: absolute;
+border: 1px solid black;
+background-color: red;
+-webkit-transform: rotateY(60deg); /* Chrome, Safari, Opera */
+-webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+transform: rotateY(60deg);
+transform-style: preserve-3d;
+}
+
+#div11{
+padding: 40px;
+position: absolute;
+border: 1px solid black;
+background-color: yellow;
+-webkit-transform: rotateY(-60deg); /* Chrome, Safari, Opera */
+transform: rotateY(-60deg);
+}
+</style>
+</head>
+<body>
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+<h1 style="background-color:white;">Backface Visibility</h1>
+<div class="div" id="div1">DIV 1</div>
+<div class="div" id="div2">DIV 2</div>
+<textarea rows="17" cols="67">
+.div{
+position: relative;
+height: 60px;
+width: 60px;
+background-color: red;
+-webkit-transform: rotateY(180deg);  /* Chrome, Safari, Opera */
+transform: rotateY(180deg);
+}
+#div1 {
+-webkit-backface-visibility: hidden;  /* Chrome, Safari, Opera */
+backface-visibility: hidden;
+}
+#div2 {
+-webkit-backface-visibility: visible;  /* Chrome, Safari, Opera */
+backface-visibility: visible;
+}
+</textarea>
+
+<h1 style="background-color:white;">Perspective</h1>
+<div id="div3">
+<div id="div4">Merhaba
+</div>
+</div>
+<textarea rows="19" cols="62">
+#div3{
+position:relative;
+height:150px;
+width:150px;
+margin:50px;
+padding:10px;
+border:1px solid black;
+-webkit-perspective:150px; /* Chrome, Safari, Opera */
+perspective:150px;
+}
+#div4{
+padding:50px;
+position:absolute;
+border:1px solid black;
+background-color:red;
+-webkit-transform:rotateX(45deg); /* Chrome, Safari, Opera */
+transform:rotateX(45deg);
+}
+</textarea>
+
+<h1 style="background-color:white;">Perspective Origin</h1>
+<div id="div5">
+<div id="div6">Merhaba
+</div>
+</div>
+<textarea rows="21" cols="65">
+#div5 {
+position: relative;
+height: 150px;
+width: 150px;
+margin: 50px;
+padding: 10px;
+border: 1px solid black;
+-webkit-perspective: 150px; /* Chrome, Safari, Opera */
+-webkit-perspective-origin: 10% 10%; /* Chrome, Safari, Opera */
+perspective: 150px;
+perspective-origin: 10% 10%;
+}
+#div6 {
+padding: 50px;
+position: absolute;
+border: 1px solid black;
+background-color: red;
+-webkit-transform: rotateX(45deg); /* Chrome, Safari, Opera */
+transform: rotateX(45deg);
+}
+</textarea>
+
+<h1 style="background-color:white;">Transform</h1>
+<div class="div2">Merhaba</div>
+<textarea rows="10" cols="61">
+.div2{
+width: 200px;
+height: 100px;
+background-color: yellow;
+/* Rotate div */
+-ms-transform: rotate(7deg); /* IE 9 */
+-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+transform: rotate(7deg);
+}
+</textarea>
+
+<h1 style="background-color:white;">Transform Origin</h1>
+<div id="div7">
+<div id="div8">Merhaba
+</div>
+</div>
+<textarea rows="22" cols="64">
+#div7{
+position: relative;
+height: 200px;
+width: 200px;
+margin: 100px;
+padding: 10px;
+border: 1px solid black;
+}
+
+#div8{
+padding: 50px;
+position: absolute;
+border: 1px solid black;
+background-color: red;
+-ms-transform: rotate(45deg); /* IE 9 */
+-ms-transform-origin: 20% 40%; /* IE 9 */
+-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+-webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */
+transform: rotate(45deg);
+transform-origin: 20% 40%;
+}
+</textarea>
+
+<h1 style="background-color:white;">Transform Style</h1>
+<div id="div9">
+<div id="div10">Merhaba
+<div id="div11">Sarı
+</div>
+</div>
+</div>
+<textarea rows="29" cols="68">
+#div9{
+position: relative;
+height: 200px;
+width: 200px;
+margin: 100px;
+padding: 10px;
+border: 1px solid black;
+}
+
+#div10{
+padding: 50px;
+position: absolute;
+border: 1px solid black;
+background-color: red;
+-webkit-transform: rotateY(60deg); /* Chrome, Safari, Opera */
+-webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+transform: rotateY(60deg);
+transform-style: preserve-3d;
+}
+
+#div11{
+padding: 40px;
+position: absolute;
+border: 1px solid black;
+background-color: yellow;
+-webkit-transform: rotateY(-60deg); /* Chrome, Safari, Opera */
+transform: rotateY(-60deg);
+}
+</textarea>
+
+<br><br>
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+</body>
+</html>

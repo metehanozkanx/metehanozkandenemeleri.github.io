@@ -1,0 +1,273 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<style>
+textarea#bicim{
+resize:none;
+}
+body{
+background-color:lightblue;
+}
+p.colorwhite {
+color:white;
+}
+p.aligncenter{
+text-align:center;
+}
+p.alignright{
+text-align:right;
+}
+p.alignleft{
+text-align:left;
+}
+p.textalignlast{
+text-align: justify;
+-moz-text-align-last: right; /* Code for Firefox */
+text-align-last: right;
+}
+p.decorationoverline{
+text-decoration:overline;
+}
+p.decorationlinethrough{
+text-decoration:line-through;
+}
+p.decorationunderline{
+text-decoration:underline;
+}
+p.uppercase{
+text-transform:uppercase;
+}
+p.lowercase{
+text-transform:lowercase;
+}
+p.capitalize{
+text-transform:capitalize;
+}
+p.indent{
+text-indent:50px;
+}
+p.spacing {
+letter-spacing:3px;
+}
+p.spacing1 {
+letter-spacing:-3px;
+}
+p.wordspacing{
+word-spacing:10px;
+}
+p.wordspacing1{
+word-spacing:-5px;
+}
+p.small{
+line-height: 0.7;
+}
+p.directionrtl{
+direction:rtl;
+}
+p.unicodebidi{
+direction:rtl;
+unicode-bidi:bidi-override;
+}
+p.textshadow{
+text-shadow:3px 2px red;
+}
+p.whitespace{
+white-space:nowrap;
+}
+p.textoverflow{
+white-space: nowrap; 
+width: 12em; 
+overflow: hidden;
+text-overflow: ellipsis; 
+border: 1px solid #000000;
+}
+p.wordbreak{
+width:140px;
+border:1px solid black;
+word-break:keep-all;
+}
+p.wordwrap{
+width:11em;
+border:1px solid black;
+word-wrap:break-word;
+}
+p.hangingpunctuation{
+hanging-punctuation:first;
+}
+p.punctuation-trim{
+punctuation-trim:start;
+}
+p.textjustify{
+text-align:justify;
+text-justify:kashida;
+}
+</style>
+</head>
+<body>
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+<h1><center>Text Color</center></h1>
+<p class="colorwhite">Bu paragraf beyaz renk ile yazılmıştır.</p>
+<textarea id="bicim" rows="2" cols="20">
+color:white;
+</textarea>
+
+<h1><center>Text Alignment</center></h1>
+<p class="aligncenter">Bu metin ortaya hizalanmıştır.</p>
+<textarea id="bicim" rows="2" cols="20">
+text-align:center;
+</textarea>
+<p class="alignright">Bu metin sağa hizalanmıştır.</p>
+<textarea id="bicim" rows="2" cols="20">
+text-align:right;
+</textarea>
+<p class="alignleft">Bu metin solo hizalanmıştır.</p>
+<textarea id="bicim" rows="2" cols="20">
+text-align:left;
+</textarea>
+
+<h1><center>Text Align Last</center></h1>
+<p class="textalignlast">Bu bir metin Bu bir metin Bu bir metin Bu bir Metin</p>
+<textarea id="bicim" rows="4" cols="52">
+text-align: justify;
+-moz-text-align-last: right; /* Code for Firefox */
+text-align-last: right;
+</textarea>
+
+<h1><center>Text Decoration</center></h1>
+<p class="decorationoverline">Paragraf metini overline..</p>
+<textarea id="bicim" rows="2" cols="26">
+text-decoration:overline;
+</textarea>
+<p class="decorationlinethrough">Paragraf metini line through..</p>
+<textarea id="bicim" rows="2" cols="30">
+text-decoration:line-through;
+</textarea>
+<p class="decorationunderline">Paragraf metini underline..</p>
+<textarea id="bicim" rows="2" cols="27">
+text-decoration:underline;
+</textarea>
+
+<h1><center>Text Transform</center></h1>
+<p class="uppercase">Bu text büyük harf</p>
+<textarea id="bicim" rows="2" cols="26">
+text-transform:uppercase;
+</textarea>
+<p class="lowercase">Bu text küçük harf</p>
+<textarea id="bicim" rows="2" cols="26">
+text-transform:lowercase;
+</textarea>
+<p class="capitalize">Bu text kelimenin başı büyük harf</p>
+<textarea id="bicim" rows="2" cols="27">
+text-transform:capitalize;
+</textarea>
+
+<h1><center>Text Indentation</center></h1>
+<p class="indent">Bu metin başlarken 50px'lik boşluk bırakarak başlıyacaktır.</p>
+<textarea id="bicim" rows="2" cols="20">
+text-indent:50px;
+</textarea>
+
+<h1><center>Letter Spacing</center></h1>
+<p class="spacing">Bu harf boşluğu geniş 3px'lik olarak yazılmıştır.</p>
+<textarea id="bicim" rows="2" cols="20">
+letter-spacing:3px;
+</textarea>
+<p class="spacing1">Harf boşluğu -3px</p>
+<strong>^^^^Yukarıdaki harf boşluğu -3px lik dar olarak yazılmıştır.</strong><br>
+<textarea id="bicim" rows="2" cols="21">
+letter-spacing:-3px;
+</textarea>
+
+<h1><center>Word Spacing</center></h1>
+<p class="word-spacing">Bu bir metin</p>
+<textarea id="bicim" rows="2" cols="20">
+word-spacing:10px;
+</textarea>
+<p class="wordspacing1">Bu bir metin</p>
+<textarea id="bicim" rows="2" cols="20">
+word-spacing:-5px;
+</textarea>
+
+<h1><center>Line Height</center></h1>
+<p class="small">Bu paragraf kücük</p>
+<textarea id="bicim" rows="2" cols="20">
+line-height:0.7;
+</textarea>
+
+<h1><center>Text Direction</center></h1>
+<p class="directionrtl"><bdo dir="rtl">Bu sağdan sola metin yönüdür</p>
+<textarea id="bicim" rows="3" cols="40">
+direction:rtl;
+Classın içine <bdo dir="rtl"> ekliyoruz
+</textarea>
+
+<h1><center>Unicode Bidi</center></h1>
+<p class="unicodebidi">Bu bir metin</p>
+<textarea id="bicim" rows="3" cols="28">
+direction:rtl;
+unicode-bidi:bidi-override;
+</textarea>
+
+<h1><center>Text Shadow</center></h1>
+<p class="textshadow">Bu metin efektli</p>
+<textarea id="bicim" rows="2" cols="26">
+text-shadow: 3px 2px red;
+</textarea>
+
+<h1><center>White Scape</center></h1>
+<p class="whitespace">Bu bir metin Bu bir metin Bu bir metin Bu bir metin</p>
+<textarea id="bicim" rows="2" cols="20">
+white-space:nowrap;
+</textarea>
+
+<h1><center>Text Overflow</center></h1>
+<p class="textoverflow">Text Overflow metini cümle devam etmekte</p>
+<textarea id="bicim" rows="7" cols="37">
+white-space: nowrap; 
+width: 12em; 
+overflow: hidden;
+text-overflow: ellipsis; 
+border: 1px solid #000000;
+-CÜMLE DEVAM EDİYOR AMA GÖSTERMİYOR-
+</textarea>
+
+<h1><center>Word Break</center></h1>
+<p class="wordbreak">Ne kadar yazarsan yaz hepsini kutu içinde oto boyutluyor. Keep all:Hepsini tut demek..</p>
+<textarea id="bicim" rows="4" cols="24">
+width:140px;
+border:1px solid black;
+word-break:keep-all;
+</textarea>
+
+<h1><center>Word Wrap</center></h1>
+<p class="wordwrap">Bu bir metin Bu bir metin Bu bir metin Bu bir metin</p>
+<textarea id="bicim" rows="4" cols="24">
+width:11em;
+border:1px solid black;
+word-wrap:break-word;
+</textarea>
+
+<h1><center>Hanging Punctuation</center></h1>
+<p class="hangingpunctuation">Bu bir metin Bu bir metin.,.,.,:</p>
+<textarea id="bicim" rows="2" cols="27">
+hanging-punctuation:first;
+</textarea>
+
+<h1><center>Punctuation Trim</center></h1>
+<p class="punctuation-trim">Bu bir metin Bu bir metin..,,,:</p>
+<textarea id="bicim" rows="2" cols="24">
+punctuation-trim:start;
+</textarea>
+
+<h1><center>Text Justify</center></h1>
+<p class="textjustify">Text Justify Text Justify Text Justify Text Justify Text Justify Text Justify Text Justify Text Justify 
+TextjustifytextjustifytextjustifytextjustifyTextjustifytextjustifytextjustifytextjustifyTextjustifytextjustifytextjustifytextjustifyTextjustifytextjustifytextjustifytextjustify</p>
+<textarea id="bicim" rows="4" cols="25">
+text-align:justify;
+text-justify:auto;
+</textarea>
+
+<a href="index.html"><center>Ana Sayfaya Dön</center></a>
+
+</body>
+</html>
